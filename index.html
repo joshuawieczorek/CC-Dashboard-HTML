@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ccDashboard">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Confirmation</title>
+</head>
+<body>
+
+    <div id="wrapper" class="pure-g"><!-- START: Container -->
+
+        <div id="sidebar-left" class="pure-u-1-5"><!-- START: Left Nav -->
+            
+            <!-- SIDEBAR-LEFT: Container -->        
+            <div id="sidebar-left-container" class="sidebar-left-container" ng-include="'assets/templates/sidebar-left.html'"></div>
+
+        </div><!-- #END: Left Nav -->
+
+        <div id="right-content" class="pure-u-4-5"><!-- START: Body Content -->
+
+            <!-- BODY: Top nav -->
+            <div id="body-nav-top"  class="body-container" ng-include="'assets/templates/navs/top.html'"></div>
+
+            <!-- BODY: Box row 1 -->
+            <div id="body-row-1" class="body-container body-row pure-g" ng-include="'assets/templates/body-content-r1.html'"></div>
+
+            <!-- BODY: Box row 2 -->
+            <div id="body-row-2" class="body-container body-row pure-g" ng-include="'assets/templates/body-content-r2.html'"></div>
+
+            <!-- PAGE FOOTER --> 
+            <div id="page-footer" class="body-container body-footer pure-g" ng-include="'assets/templates/footer.html'"></div>
+
+        </div><!-- #END: Body Content -->       
+
+    </div><!-- #END: Container -->    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>

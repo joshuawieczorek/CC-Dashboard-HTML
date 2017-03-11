@@ -1,0 +1,42 @@
+<div class="box-container" id="box-1">
+
+    <header class="box-header">
+        <h3>Clients</h3>
+    </header>
+
+    <main>
+
+        <form class="pure-form pure-form-stacked">
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <label for="s-type">Search By:</label>
+                    <select id="s-type" name="s-type">
+                        <option>Please Select...</option>
+                        <option>ID</option>
+                        <option>Nmae</option>            
+                    </select>
+                </div>
+                <div class="pure-u-1">
+                     <label for="s-query">Query</label>
+                    <input id="s-query" class="pure-u-23-24" type="text">
+                </div>
+                <div class="pure-u-1">
+                    <button type="submit" class="pure-button pure-button-primary">Search</button>
+                </div>
+            </div>            
+        </form>
+
+        <ul>
+            <li><a href="#clients?s=Bob%20Clark">Bob Clark</a></li>
+            <li><a href="#clients?s=Bob%20Clark">Sally Mae</a></li>
+            <li><a href="#clients?s=Bob%20Clark">Jeremy Jones</a></li>
+            <li><a href="#clients?s=Bob%20Clark">Bill Howard</a></li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <a href="#clients">View Clients Page &rarr;</a>
+    </footer>
+
+</div>
